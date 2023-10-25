@@ -1,0 +1,143 @@
+body 
+{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+table {
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid  white;
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: center;
+}
+.header ul {
+    margin: 0;
+}
+.header li {
+    display: inline;
+    text-align: right;
+    margin-right: 45px;
+    margin-left: 5px;
+}
+.header {
+    background-color: rgb(128, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 25px 0;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+.main-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+}
+.container {
+background-image: url(background.jpg);
+color: white;
+padding: 30px;
+}
+.p1 {
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.225);
+    white-space: normal;
+}
+.p2 {
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.225);
+    white-space: normal;
+}
+.p3 {
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.225);
+    white-space: normal; 
+}
+.p4 {
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.225);
+    white-space: normal;
+}
+.cities{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.cities:hover {
+    color: rgba(255, 255, 255, 0.51);
+    border-color: rgba(255, 255, 255, 0.51);
+}
+.attractions{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.attractions:hover {
+    color: rgba(255, 255, 255, 0.51);
+    border-color: rgba(255, 255, 255, 0.51);
+}
+.w-50 {
+    width: 50%;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.pic1 {
+    border: 5px solid white;
+}
+.pic2{
+    border: 5px solid white;
+}
+.pic3{
+    border: 5px solid white;
+}
+.pic4{
+    border: 5px solid white;
+}
+.pic5{
+    border: 5px solid white;
+}
+.pic6 {
+    border: 5px solid white;
+}
+.pic7{
+    border: 5px solid white;
+}
+.pic8{
+    border: 5px solid white;
+}
+.pic9{
+    border: 5px solid white;
+}
+.pic10{
+    border: 5px solid white;
+}
