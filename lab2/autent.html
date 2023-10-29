@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Форма обратной связи</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a class="btn" href="index.html">Назад</a>
+        </div>
+        <h1>Регистрация</h1>
+    </header>
+    <form method="POST" action="http://httpbin.org/post" class="container2">
+    <div>
+        <p><label for="login">Логин:</label></p>
+            <input type="text" id = "fio" placeholder="Введите логин" name="fio">
+    </div>
+    <div>
+        <p><label for="password">Пароль:</label></p>
+        <input type="password" id = "email" placeholder="Введите пароль" name="fio" required>
+    </div>
+    <div>
+        <input type="checkbox" name="remember" id="remember">
+        <label for="remember">Запомнить меня</label>
+    </div>
+    <button type="submit" class="btn2">Войти</button>
+    </form>
+</body>
+</html>
