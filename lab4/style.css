@@ -1,0 +1,38 @@
+body {
+    background-color: #2b2b2b;
+    color: #fff;
+    background-image: url(tic-tac-toe/images/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    border: 2px solid #fff;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5%;
+    background-color: #4b4a4a;
+}
+
+.container p {
+    font-size: 50px;
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    transition: color 1s, border-color 1s;
+    line-height: 70px;
+}
+
+.container ul li a:hover {
+    color: rgb(20, 201, 32);
+}

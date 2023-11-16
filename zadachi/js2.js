@@ -1,20 +1,25 @@
-"use strict";
-function gcd(a, b) {
-    if (a > b) {
-        let rem = a % b;
-        a = b;
-        b = rem;
+'use strict';
+function gcd(z, x) {
+    if (z < 0 || x < 0) {
+        return "Ошибка. Число n должно быть натуральным";
     }
-    return a;
-}
-else {
-    while (a != 0) {
-        let rem = b % a;
-        b = a;
-        a = rem;
+    if (z > x) {
+        while (x !== 0) {
+            let rem = z % x;
+            z = x;
+            x = rem;
+        }
+        return z;
+    } else {
+        while (z !== 0) {
+            let rem = x % z;
+            x = z;
+            z = rem;
+        }
+        return x;
     }
-    return b;
 }
-let a = prompt("Введите число a:");
-let b = prompt("Введите число b:");
-alert(`Наибольший общий делитель чисел ${a} и ${b} = ${gcd(a, b)}`);
+
+let z = prompt("Введите число z:");
+let x = prompt("Введите число x:");
+alert(`Наибольший общий делитель чисел ${z} и ${x} = ${gcd(z, x)}`);
