@@ -1,0 +1,37 @@
+body {
+    color: #c30000;
+    background-image: url(background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    border: 5px solid #fff;
+    border-radius: 15px;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10%;
+    background-color: rgba(255, 255, 255, 0.801);
+}
+
+.container p {
+    font-size: 50px;
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: #c30000;
+    font-size: 40px;
+    line-height: 65px;
+}
+
+.container ul li a:hover {
+    color: rgb(150, 0, 0);
+}
