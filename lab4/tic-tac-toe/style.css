@@ -1,0 +1,79 @@
+#game {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+} /*игра*/
+
+#board {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    font-size: 5rem;
+    background-color: rgb(235, 235, 235);
+    border: 3px solid #333232;
+    color: black;
+} /*поле для крестиков-ноликов*/
+
+.field {
+    float: left;
+    height: 100px;
+    width: 100px;
+    border: 2px solid #333232;
+    box-sizing: border-box; 
+} /*квадраты в поле*/
+
+#btn {
+    width: 200px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    background-color: #333232;
+    margin: 25px;
+    font-size: 20px;
+} /*кнопка "новая игра"*/
+
+.message {
+    border: 2px solid rgb(112, 141, 141);
+    border-radius: 7px;
+    padding: 5px;
+} /*сообщение (при окончании игры)*/
+
+.messageGood {
+    background-color: rgb(95, 228, 17);
+    border-color: rgb(0, 0, 0);
+} /*победа*/
+
+.messageBad {
+    background-color: rgb(216, 14, 14);
+    border-color: rgb(0, 0, 0);
+} /*ошибка*/
+
+body {
+    background-color: #2b2b2b;
+    color: #333232;
+    background-image: url(background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+} 
+
+a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 12px 49px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #333232;
+    font-size: 20px;
+} /*кнопка "На главную"*/
+
+a:hover {
+    color: rgba(255, 255, 255, 0.778);
+}
+
+#btn:hover {
+    color: rgba(255, 255, 255, 0.778);
+}

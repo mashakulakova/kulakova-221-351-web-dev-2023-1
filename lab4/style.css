@@ -1,19 +1,19 @@
 body {
-    background-color: #2b2b2b;
-    color: #fff;
-    background-image: url(tic-tac-toe/images/background.jpg);
+    color: #c30000;
+    background-image: url(background.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
 
 .container {
-    border: 2px solid #fff;
+    border: 5px solid #fff;
+    border-radius: 15px;
     width: 400px;
     height: 400px;
     margin: 0 auto;
     text-align: center;
-    margin-top: 5%;
-    background-color: #4b4a4a;
+    margin-top: 10%;
+    background-color: rgba(255, 255, 255, 0.801);
 }
 
 .container p {
@@ -27,12 +27,11 @@ body {
 
 .container ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #c30000;
     font-size: 40px;
-    transition: color 1s, border-color 1s;
-    line-height: 70px;
+    line-height: 65px;
 }
 
 .container ul li a:hover {
-    color: rgb(20, 201, 32);
+    color: rgb(150, 0, 0);
 }

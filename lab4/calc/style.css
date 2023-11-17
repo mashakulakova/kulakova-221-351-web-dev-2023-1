@@ -1,0 +1,106 @@
+body {
+    background-color: #333232;
+    color: #fff;
+    background-image: url(background2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+main {
+    text-align: center;
+}
+
+.calc-container {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.screen {
+    background-color: rgb(83, 83, 86);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 35px; /* Увеличиваем размер шрифта на экране */
+    padding: 20px; /* Больше внутреннего отступа */
+    text-align: right;
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*определение кол-ва и ширины колонок*/
+    /*fr(фракция)-все контейнеры будут иметь одинаковую ширину*/
+    gap: 40px; /*отступы между колонками и рядами*/
+    padding: 30px;
+}
+
+.digits, .other {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.digit {
+    background-color: #f0f0f0;
+    border-radius: 15%;
+    width: 60px;
+    height: 60px;
+}
+
+.operation {
+    background-color: #a3a3a3;
+    color: #fff;
+    border-radius: 15%;
+    width: 60px;
+    height: 60px;
+}
+
+.bracket {
+    background-color: #a3a3a3;
+    color: #fff;
+    border-radius: 15%;
+    width: 60px;
+    height: 60px;
+
+}
+
+.result {
+    background-color: #577894;
+    color: #fff;
+    border-radius: 15%;
+    width: 60px;
+    height: 60px;
+}
+
+.clear {
+    background-color: #764946;
+    color: #fff;
+    border-radius: 15%;
+    width: 60px;
+    height: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 12px 49px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #333232;
+    font-size: 20px;
+    margin: 30px;
+} /*кнопка "На главную"*/
+
+a:hover {
+    color: rgba(255, 255, 255, 0.778);
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center; /*выравнивание элементов вдоль поперечной оси*/
+}

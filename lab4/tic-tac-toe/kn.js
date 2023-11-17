@@ -74,7 +74,7 @@ function checkWinner (collection) {
 
 function onCellClick (event) {
     if (state.gameOver) {
-        showMessage("game is over, start new game", "Bad");
+        showMessage("Игра окончена, начните новую игру", "Bad");
         return;
     }
     if (event.target.className == "field" && event.target.innerHTML == "") {
@@ -82,14 +82,14 @@ function onCellClick (event) {
         state.move = !state.move;
         if (checkWinner(this.children)) { 
             
-            showMessage("win " + event.target.innerHTML);
+            showMessage("Выиграл " + event.target.innerHTML);
 
             state.gameOver = true;
             return;
         }
     }
     if (deadEnd(this.children)) {
-        showMessage("draw", "Bad");
+        showMessage("Ничья", "Bad");
         state.gameOver = true;
         return;
     }     
