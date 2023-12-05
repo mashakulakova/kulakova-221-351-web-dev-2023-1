@@ -1,0 +1,129 @@
+body 
+{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.header ul {
+    margin: 0;
+}
+.header li {
+    display: inline;
+    text-align: right;
+    margin-right: 45px;
+    margin-left: 5px;
+}
+.header {
+    background-color: rgb(128, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 25px 0;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.main-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+}
+.container {
+background-image: url(img/background.jpg);
+color: white;
+padding: 30px;
+}
+.p1 {
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.225);
+    white-space: normal;
+}
+.p2 {
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.225);
+    white-space: normal;
+}
+.p3 {
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.225);
+    white-space: normal; 
+}
+.p4 {
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.225);
+    white-space: normal;
+}
+.p5 {
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.225);
+    white-space: normal;
+}
+.btn {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-bloc;
+}
+.btn:hover {
+    color: rgba(255, 255, 255, 0.51);
+    border-color: rgba(255, 255, 255, 0.51);
+}
+.w-50 {
+    width: 50%;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex .col img {
+	width: 100%;
+	height: auto;
+}
+.flex {
+	display: flex;
+	justify-content: center; /*расположение элементов вдоль главной оси*/
+	width: 2000px;
+	max-width: 100%;
+	margin: auto;
+}
+.flex .col {
+	display: flex;
+	flex-direction: column; /*направление основной и поперечной осей*/
+	flex: 1 1 300px; /*grow, shrink, basis*/
+	margin: 25px;
+    border: 5px solid white;
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.225);
+}
+.pricing-plan {
+    background-color: #4c1f1fde;
+    margin: 15px 8px;
+    padding: 30px;
+    color: #fff;
+}
+.pricing-plan ul {
+    margin: 0 0 35px;
+    padding-left: 16px;
+    line-height: 1.8;
+    color: #d6d5d5;
+}
+@media (max-width: 900px) {
+	.flex {
+		flex-wrap: wrap;
+	}
+}

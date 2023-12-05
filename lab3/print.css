@@ -1,0 +1,15 @@
+@media print {
+.btn {
+display: none;
+}
+.header, .footer {
+display: none;
+}
+.flex {
+justify-content: center;
+max-width: 100%;
+}
+.flex .col {
+flex-direction: column;
+}
+}
