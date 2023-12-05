@@ -1,0 +1,47 @@
+.section1 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.section2 {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 251, 241);
+}
+
+.section3 {
+    color: white;
+}
+
+.section4 {
+    background-color: rgb(181, 209, 180);
+    color: white;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+}
+
+.greenBack {
+    background-color: rgb(5, 72, 41);
+}
+
+
+.button {
+    background-color: #087a0a;
+    color: white;
+}
+
+.icon {
+    color: white;
+    font-size: 30px;
+}
+
+header {
+    border-bottom: 1px solid rgb(38,38,38);
+    background-color: rgb(181, 209, 180) !important;
+}
+
+footer {
+    background-color: rgb(5, 72, 41);
+    color: white;
+}
