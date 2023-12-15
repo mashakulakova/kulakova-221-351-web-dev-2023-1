@@ -51,9 +51,9 @@ td {
     margin-top: 10px;
 }
 .container {
-background-image: url(background.jpg);
-color: white;
-padding: 30px;
+    background-image: url(background.jpg);
+    color: white;
+    padding: 30px;
 }
 .p1 {
     padding: 10px;
