@@ -1,0 +1,20 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    margin: 0 25%;
+}
+
+.Post:first-child {
+    margin-top: 0;
+}
+
+.Post {
+    margin-top: 15px;
+    padding: 5px;
+    border: 5px solid cyan;
+    border-radius: 15px;
+    background-color: rgba(11, 122, 128, 0.5);
+}
