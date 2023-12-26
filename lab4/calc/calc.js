@@ -103,54 +103,26 @@ function compile(str) {
 // (https://ru.wikipedia.org/wiki/Обратная_польская_запись#Вычисления_на_стеке).
 
 function evaluate(str) {
-    const stack = [];  // Стек для операндов.
-
-    // Разбиваем строку на токены, используя пробел в качестве разделителя.
-    const tokens = str.split(' ');
-
-    // Итерация по токенам.
-    for (const token of tokens) {
-        // Если токен является числом, добавляем его в стек.
-        if (isNumeric(token)) {
-            stack.push(parseFloat(token));
-        }
-        // Если токен - операция, выполняем соответствующую операцию над двумя верхними операндами в стеке.
-        else if (isOperation(token)) {
-            const operand2 = stack.pop();
-            const operand1 = stack.pop();
-            let result;
-
-            // Выбираем операцию в зависимости от токена.
-            switch (token) {
-                case '+':
-                    result = operand1 + operand2;
-                    break;
-                case '-':
-                    result = operand1 - operand2;
-                    break;
-                case '*':
-                    result = operand1 * operand2;
-                    break;
-                case '/':
-                    result = operand1 / operand2;
-                    break;
-                default:
-                    throw new Error('Неизвестный оператор: ' + token);
-            }
-
-            // Добавляем результат обратно в стек.
+    let stack = [];
+    const operators = {
+        '+': (x, y) => x + y,
+        '-': (x, y) => x - y,
+        '*': (x, y) => x * y,
+        '/': (x, y) => x / y
+    };
+    const elements = str.split(' ');
+    for (let element of elements) {
+        if (!isNaN(element)) {
+            stack.push(parseFloat(element));
+        } else {
+            let operand2 = stack.pop();
+            let operand1 = stack.pop();
+            let result = operators[element](operand1, operand2);
             stack.push(result);
         }
     }
-
-    // Если в стеке остался ровно один элемент, возвращаем его как результат вычислений.
-    if (stack.length !== 1) {
-        throw new Error('Недопустимое выражение');
-    }
-
     return stack[0];
 }
-
 // Функция clickHandler предназначена для обработки 
 // событий клика по кнопкам калькулятора. 
 // По нажатию на кнопки с классами digit, operation и bracket
@@ -166,25 +138,25 @@ function evaluate(str) {
 // не назначать обработчик для каждой кнопки в отдельности.
 
 function clickHandler(event) {
-    const target = event.target;
-    const screen = document.querySelector('.screen');
-
-    if (target.classList.contains('digit') || target.classList.contains('operation') || target.classList.contains('bracket')) {
-        screen.textContent += target.textContent;
-    } else if (target.classList.contains('clear')) {
-        screen.textContent = '';
-    } else if (target.classList.contains('result')) {
-        try {
-            const result = eval(screen.textContent);
-            screen.textContent = result.toFixed(2);
-        } catch (error) {
-            screen.textContent = 'Error';
-        }
+    const textField = document.querySelector(".screen > span");
+    switch (event.target.className) {
+    case "key digit":
+        textField.textContent += event.target.textContent;
+        break;
+    case "key operation":
+        textField.textContent += event.target.textContent;
+        break;
+    case "key bracket":
+        textField.textContent += event.target.textContent;
+        break;
+    case "key result":
+        textField.textContent = evaluate(compile(textField.textContent));
+        break;
+    case "key clear":
+        textField.textContent = "";
+        break;
     }
 }
-
-document.addEventListener('click', clickHandler);
-
 
 // Назначьте нужные обработчики событий.
 
